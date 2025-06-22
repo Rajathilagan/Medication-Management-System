@@ -4,7 +4,7 @@ import '../style/navbar.css'
 import Cookies from 'js-cookie';
 import { useNavigate } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({data}) => {
     const navigate = useNavigate()
    const onClickLogout = async () => {
   try {
@@ -19,8 +19,8 @@ const Navbar = () => {
             <div className="logo-card">
                 <img width="48" height="48" src="https://img.icons8.com/doodle/48/m.png" alt="m" />
                 <div>
-                    <h1>Meds Buddy Companion</h1>
-                    <p>CareTaker View</p>
+                    <h1 className='nav-head'>Meds Buddy Companion</h1>
+                    <p>{data} View</p>
                 </div>
             </div>
             <button onClick={onClickLogout} className="logout-btn" type="button">Logout</button>

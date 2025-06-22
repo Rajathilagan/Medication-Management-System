@@ -39,7 +39,7 @@ const PatientDashboard = () => {
 
   return (
     <>
-      <Navbar />
+      <Navbar data = {"Patient"} />
       <div className="patient-dashboard">
         <h2 className="title">My Medications</h2>
         {/* <p className="subtitle">Today: {today}</p> */}

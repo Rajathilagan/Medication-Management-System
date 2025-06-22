@@ -60,7 +60,7 @@ const CaretakerDashboard = () => {
 
   return (
     <>
-      <Navbar />
+      <Navbar data={"Caretaker"} />
       <div className="caretaker-container">
         <div className="caretaker-dashboard-container">
           <div className='caretaker-dashboard-card'>

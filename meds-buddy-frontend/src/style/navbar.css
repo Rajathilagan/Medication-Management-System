@@ -48,21 +48,28 @@
 
 @media screen and (max-width: 768px) {
   .navbar-container {
-    flex-direction: column;
     align-items: flex-start;
     height: auto;
-    padding: 1rem;
+    padding: 0%;
+    padding-right:10px;
     gap: 10px;
+    line-height:10px;
+    margin-bottom: 20px;
+    width: 100vw;
   }
+ 
 
   .logo-card {
-    justify-content: space-between;
     width: 100%;
   }
 
   .logout-btn {
-    align-self: flex-end;
+    align-self: center;
     font-size: 14px;
     padding: 6px 12px;
+  }
+  .nav-head{
+    font-size: 28px;
+    line-height: 20px;
   }
 }
