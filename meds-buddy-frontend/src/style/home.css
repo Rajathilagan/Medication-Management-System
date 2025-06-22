@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: rgb(224, 244, 224);
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.home-heading {
+  color: rgb(8, 7, 7);
+  font-weight: bolder;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.home-info {
+  color: rgb(108, 107, 107);
+  font-size: 1.2rem;
+  max-width: 60%;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.patient-caretaker-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.patient-caretaker-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90vw;
+  margin: 1rem 0;
+}
+
+.patient-heading {
+  color: blue;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.info {
+  text-align: center;
+  font-size: 1rem;
+  color: rgb(111, 108, 108);
+  margin-bottom: 1rem;
+}
+
+ul.custom-patient-bullets li::marker {
+  color: blue;
+  font-size: 1.2em;
+}
+
+ul.custom-caretaker-bullets li::marker {
+  color: green;
+  font-size: 1.2em;
+}
+
+.list-msg {
+  font-size: 1rem;
+  color: rgb(111, 108, 108);
+  line-height: 1.8;
+  margin: 0.5rem 0;
+}
+
+.patient-btn {
+  background-color: blue;
+  border: none;
+  padding: 10px 16px;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.caretaker-heading {
+  color: green;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.caretaker-btn {
+  background-color: green;
+  border: none;
+  padding: 10px 16px;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+/* ✅ Responsive Layout */
+@media screen and (max-width: 768px) {
+  .home-info {
+    max-width: 90%;
+    font-size: 1.1rem;
+  }
+
+  .patient-caretaker-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .patient-caretaker-card {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home-heading {
+    font-size: 1.5rem;
+  }
+
+  .home-info {
+    font-size: 1rem;
+  }
+
+  .patient-heading,
+  .caretaker-heading {
+    font-size: 1.3rem;
+  }
+
+  .list-msg,
+  .info {
+    font-size: 0.95rem;
+  }
+
+  .patient-btn,
+  .caretaker-btn {
+    font-size: 0.95rem;
+    padding: 8px 14px;
+  }
+}
+
+
+
+/* .home-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: rgb(224, 244, 224);
+    min-height: 100vh;
+    font-family: "Roboto";
+    line-height:10px;
+}
+
+.home-heading{
+    color: rgb(8, 7, 7);
+    font-weight: bolder;
+}
+
+.home-info{
+    color: rgb(108, 107, 107);
+    font-size: 20px;
+    text-align: center;
+    max-width: 60%;
+    line-height: normal;
+}
+
+.patient-caretaker-container{
+    display: flex;
+    gap: 20px;
+}
+
+.patient-caretaker-card{
+    display: flex;
+    flex-direction: column;
+    line-height: 15px;
+    background-color: white;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 400px;
+}
+
+.patient-heading{
+    color: blue;
+    text-align: center;
+}
+
+.info{
+    align-self: center;
+    text-align: center;
+    font-size: 16px;
+    color:rgb(111, 108, 108);
+    line-height: normal;
+}
+
+ul.custom-patient-bullets li::marker {
+  color:blue;
+  font-size: 1.2em; 
+}
+
+.list-msg{
+    font-size: 16px;
+    color:rgb(111, 108, 108);
+    line-height: 30px;
+}
+
+.patient-btn{
+    background-color: blue;
+    border: none;
+    padding: 8px;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.caretaker-heading{
+    color: green;
+    text-align: center;
+}
+
+ul.custom-caretaker-bullets li::marker {
+  color:green;
+  font-size: 1.2em; 
+}
+
+.caretaker-btn{
+    background-color:green;
+    border: none;
+    padding: 8px;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+} */

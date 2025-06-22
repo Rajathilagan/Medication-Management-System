@@ -1,0 +1,136 @@
+.caretaker-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(251, 245, 245);
+  min-height: 90vh;
+  padding: 30px;
+}
+
+.caretaker-dashboard-container {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to left, rgb(181, 181, 240), rgb(217, 249, 217));
+  border-radius: 10px;
+}
+
+.caretaker-dashboard-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  line-height: 10px;
+  padding: 20px;
+}
+
+.icon {
+  background-color: white;
+  color: blue;
+  font-size: 32px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.caretaker-heading {
+  color: black;
+  font-weight: bolder;
+  text-align: left;
+}
+
+.caretaker-para {
+  color: rgba(0, 0, 0, 0.588);
+  font-weight: bold;
+}
+
+.percentage-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.percentage-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+  padding: 20px;
+}
+
+.caretaker-head {
+  color: black;
+  font-weight: bolder;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.button-cls,
+.active-cls-btn {
+  border: none;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-family: "Roboto";
+  background-color: #f0f0f0;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.button-cls:hover,
+.active-cls-btn:hover {
+  cursor: pointer;
+  background-color: #e0e0e0;
+}
+
+/* ✅ Responsive Styles */
+
+@media screen and (max-width: 1024px) {
+  .percentage-container,
+  .button-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .caretaker-dashboard-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .percentage-container,
+  .button-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+    gap: 16px;
+  }
+
+  .caretaker-container {
+    padding: 15px;
+  }
+
+  .percentage-card {
+    padding: 16px;
+  }
+
+  .button-cls,
+  .active-cls-btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .icon {
+    font-size: 28px;
+    padding: 8px;
+  }
+}
+
+
+@media screen and (max-width:568px){
+    .caretaker-container{
+        width: 100vw;
+        padding: 0%;
+    }
+}

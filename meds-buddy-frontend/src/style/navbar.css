@@ -1,0 +1,68 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: beige;
+  padding: 1rem 3rem;
+  height: 10vh;
+}
+
+.logo-card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  line-height: 10px;
+}
+
+.logo {
+  background-color: blue;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.logout-btn {
+  background-color: blue;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  cursor: pointer;
+  background-color: darkblue;
+}
+
+/* Responsive Navbar */
+
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 1rem;
+    gap: 10px;
+  }
+
+  .logo-card {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .logout-btn {
+    align-self: flex-end;
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}

@@ -1,0 +1,41 @@
+.activity-container {
+  padding: 20px;
+}
+
+.activity-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f7f7f7;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.left-section {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.icon.success {
+  color: green;
+}
+
+.icon.error {
+  color: red;
+}
+
+.status-btn.taken {
+  background-color: #4caf50;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.status-btn.missed {
+  background-color: #f44336;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}

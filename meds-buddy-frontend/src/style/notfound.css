@@ -1,0 +1,58 @@
+.notfound-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.notfound-title {
+  font-size: 6rem;
+  color: #dc3545;
+  margin-bottom: 0.5rem;
+}
+
+.notfound-subtitle {
+  font-size: 2rem;
+  color: #343a40;
+  margin-bottom: 1rem;
+}
+
+.notfound-message {
+  font-size: 1.1rem;
+  color: #6c757d;
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+.notfound-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.notfound-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .notfound-title {
+    font-size: 4rem;
+  }
+
+  .notfound-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .notfound-message {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,95 @@
+.overview-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  background: #f3fcfa;
+  padding: 20px;
+}
+
+.status-card,
+.quick-actions-card,
+.progress-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.status-card h3,
+.quick-actions-card h3,
+.progress-card h3 {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.status-box {
+  background: #f7fafd;
+  padding: 10px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.pill-status {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: #f44336;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.quick-actions-card button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  background: white;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.progress-bar {
+  background: #e8e8f0;
+  height: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 80vw;
+}
+
+.progress-fill {
+  background: #111827;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.progress-summary {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.progress-summary .green {
+  color: green;
+}
+
+.progress-summary .red {
+  color: red;
+}
+
+.progress-summary .blue {
+  color: blue;
+}
+
+@media screen and (max-with:528px) {
+  .progress-fill{
+    width: 90vw;
+  }
+}

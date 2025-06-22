@@ -1,0 +1,49 @@
+.medication-form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.medication-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 100%;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.medication-form input,
+.medication-form select,
+.medication-form button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.medication-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.medication-form button:hover {
+    background-color: #45a049;
+}
+
+/* ✅ Responsive layout for tablet and mobile */
+@media screen and (max-width: 768px) {
+    .medication-form-container {
+        grid-template-columns: 1fr;
+        padding: 0px;
+    }
+
+    .medication-form {
+        width: 90%;
+    }
+}

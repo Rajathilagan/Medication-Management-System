@@ -1,0 +1,149 @@
+.calendar-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.calendar-box {
+  width: 100%;
+  max-width: 600px;
+  background: #fdfdfd;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-header button {
+  background-color: #e0e0e0;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.calendar-header span {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.calendar-day-label {
+  font-weight: bold;
+  text-align: center;
+}
+
+.calendar-cell {
+  height: 60px;
+  text-align: center;
+  padding-top: 8px;
+  position: relative;
+  border-radius: 6px;
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+/* Status Colors */
+.calendar-cell.taken {
+  background-color: #d4edda;
+  color: #28a745;
+}
+
+.calendar-cell.today {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+/* Today and Taken combo */
+.calendar-cell.today.taken {
+  background-color: #28a745;
+  color: #ffffff;
+}
+
+.calendar-cell.missed {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.calendar-cell.empty {
+  background-color: transparent;
+  border: none;
+}
+
+/* Dot for Today (even if taken) */
+.calendar-cell.today .top-dot {
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: #007bff;
+  border-radius: 50%;
+}
+
+/* Legend */
+.legend {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.legend .dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.dot.green { background-color: #28a745; }
+.dot.red { background-color: #dc3545; }
+.dot.blue { background-color: #007bff; }
+
+/* Responsive Support */
+@media (max-width: 768px) {
+  .calendar-box {
+    padding: 10px;
+  }
+
+  .calendar-grid {
+    gap: 4px;
+  }
+
+  .calendar-cell {
+    height: 45px;
+    font-size: 14px;
+    padding-top: 6px;
+  }
+
+  .calendar-header span {
+    font-size: 1rem;
+  }
+
+  .legend {
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .calendar-cell {
+    height: 40px;
+    font-size: 13px;
+    padding-top: 5px;
+  }
+}
